@@ -1,3 +1,26 @@
+'''
+- Main function
+    - Image classification with DNN model of custom vision services
+
+- Prerequisites
+    - `model.py`, `label.txt` are put in the same directory.
+    - NO GPU is required.
+
+- Usage sample:
+    python A02_infer_class.py .\test\IMG_0310.JPG
+    argument `.\test\IMG_0310.JPG` indicates image to be classified
+
+- Typical output: 
+Classified as: food
+
+city 3.000000106112566e-06
+food 0.991145670413971
+forest 5.072999920230359e-05
+
+Elapsed time is 0:00:00.539049 after loading the image
+'''
+
+
 ## Library import
 import os, sys
 import tensorflow as tf

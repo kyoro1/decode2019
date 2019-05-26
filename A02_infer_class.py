@@ -20,7 +20,6 @@ forest 5.072999920230359e-05
 Elapsed time is 0:00:00.539049 after loading the image
 '''
 
-
 ## Library import
 import os, sys
 import tensorflow as tf
@@ -82,7 +81,6 @@ labels = []
 with open(labels_filename, 'rt') as lf:
     for l in lf:
         labels.append(l.strip())
-
 
 # Import the TF graph
 with tf.gfile.GFile(filename, 'rb') as f:
